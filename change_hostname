@@ -26,7 +26,6 @@ old_hostname=$(cut -d ' ' -f4 /etc/hosts)
 # edit /etc/sysconfig/network
 /usr/bin/echo "HOSTNAME=$user_hostname" >> /etc/sysconfig/network
 
-# notify user to reboot for full change to take effect
 echo "Hostname has been changed to $user_hostname. Reboot the machine for the change to take full effect."
 
 
